@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+
+{% block title_head %}
+<title>Paletas</title>
+{% endblock title_head %}
+ 
+{% block h1_header %}
+    Se creo la paleta {{paleta.marca}}
+{% endblock h1_header %}
+
+{% block main %}
+
+
+<form action="">
+    <input type="text" name='marca' placeholder='marca, descripcion'>
+    <input type="submit" value='Buscar'>
+</form>
+
+{% if listado_de_paletas %}
+
+<ul>
+
+{% for paleta in listado_de_paletas  %}
+<li> {{paleta}} </li>
+{% endfor %}
+
+</ul>
+
+{% else %}
+<p>No se encontraron paletas</p>
+{% endif %}
+{% endblock main %}
+
