@@ -33,8 +33,10 @@
                         <li class="nav-item"><a class="nav-link" href="{% url "inicio" %}">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url "paletas" %}">Paletas</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url "crear_paleta" %}">Crear Paleta</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url "autos" %}">Autos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url "crear_auto" %}">Crear Auto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url "motos" %}">Motos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url "crear_moto" %}">Crear Moto</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,9 +45,9 @@
         {% block contiene_header %}
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">Base</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services"> {% block h1_header %} Tell Me More {% endblock h1_header %} </a>
+                
+                <div class="masthead-heading text-uppercase">{% block h1_header %}Base{% endblock h1_header %}</div>
+                
             </div>
         </header>
         {% endblock contiene_header %}
