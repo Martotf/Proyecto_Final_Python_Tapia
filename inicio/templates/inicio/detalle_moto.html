@@ -2,24 +2,20 @@
 
 
 {% block title_head %}
-<title> Crear Moto </title>
+<title>Moto</title>
 {% endblock title_head %}
  
 {% block h1_header %}
-Crear Moto
+Moto {{moto.id}}
 {% endblock h1_header %}
 
 {% block main %}
 
- <form action="" method='POST' >
-
-    {% csrf_token %}
-    {{formulario}}
-
-    <input type="submit" value='Crear'>
-   
-
-</form>
+<ul>
+    <li>Marca: {{moto.marca}} </li>
+    <li>Descripcion: {{moto.descripcion}} </li>
+    <li>Anio: {{moto.anio}} </li>
+</ul>
 
 {% endblock main %}
 

@@ -2,24 +2,20 @@
 
 
 {% block title_head %}
-<title> Crear Moto </title>
+<title>Trineo</title>
 {% endblock title_head %}
  
 {% block h1_header %}
-Crear Moto
+Trineo {{trineo.id}}
 {% endblock h1_header %}
 
 {% block main %}
 
- <form action="" method='POST' >
-
-    {% csrf_token %}
-    {{formulario}}
-
-    <input type="submit" value='Crear'>
-   
-
-</form>
+<ul>
+    <li>Marca: {{trineo.marca}} </li>
+    <li>color: {{trineo.color}} </li>
+    <li>Anio: {{trineo.anio}} </li>
+</ul>
 
 {% endblock main %}
 
