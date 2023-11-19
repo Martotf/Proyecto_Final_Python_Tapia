@@ -1,4 +1,4 @@
-# Tercera pre-entrega Tapia
+# Proyecto Final Tapia
 
 Para abrir la web escribimos en la terminal: 'python manage.py runserver', con eso nos va a aparecer en el puerto en el que se abrio la web. Con ctrl + click izquierdo abrimos la web en nuestro navegador. 
 En el nav bar podemos movernos por las distintas paginas para ver y para crear.
